@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+} */
+main{
+    /* z-index: -1; */
+    position:relative;
+    z-index: -1;
+    height:auto;
+    width:auto;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 33) !important;
+    color: white !important;
+}
+
+nav {
+    background-color: goldenrod;
+    height: 15%;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    /* z-index: 400px; */
+}
+
+#element {
+    color:blueviolet;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: border-radius, border, background-color, padding 0.5s ease;
+}
+
+.projectsContainer a {
+    text-decoration: none;
+    color: brown;
+
+}
+
+.card-link:hover::before {
+    content: "< ";
+}
+
+.card-link:hover::after {
+    content: " />";
+}
+
+nav ul li a:hover {
+    border: 2px solid white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.firstSec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    height: 700px;
+    border-radius: 50px;
+}
+
+.h2head {
+    margin-left: 45vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-text {
+    font-family: cursive;
+}
+
+.card-link {
+    font-family: monospace;
+}
+
+.secondSec {
+    /* background-color: greenyellow; */
+    height: 700px;
+    
+}
+
+.secondSec .projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 10px; */
+    /* z-index: -1; */
+}
+
+.secondSec .projectsContainer .card {
+    margin-top: 20px;
+    /* z-index: -1; */
+}
+
+footer {
+    /* bottom: 0; */
+
+    /* position:fixed; */
+    background:lightgoldenrodyellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:auto;
+}
+
+footer .footRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Negotiable */
+footer .bx {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 360px)
+{.secondSec .projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 10px; */
+    flex-direction: column;
+    /* z-index: -1; */
+
+} 
+
+}
+    
